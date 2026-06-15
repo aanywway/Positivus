@@ -19,7 +19,7 @@ html {
 }
 body {
     font-family: "Space Grotesk", sans-serif;
-    margin: 60px 100px 0px 100px;
+    margin: 60px 80px 0px;
 }
 .btn {
     border-radius: 14px;
@@ -244,7 +244,7 @@ header {
     gap: 64px;
     justify-content: space-between;
     align-self: center;
-    width: 1340px;
+    min-width: 1340px;
     height: 326px;
     background-color: var(--main-color);
     border-radius: 45px;
@@ -581,5 +581,428 @@ footer {
 
     &:hover {
         cursor: pointer;
+    }
+}
+@media (max-width: 1280px) {
+    :root {
+        --h1-font-size: 52px;
+        --h2-font-size: 36px;
+        --h3-font-size: 26px;
+        --h4-font-size: 18px;
+        --p-font-size: 16px;
+    }
+    body {
+        margin: 40px 40px 0px;
+        overflow-x: hidden;
+    }
+    .navbar-list a {
+        font-size: 18px;
+    }
+    .header-btn {
+        min-width: 210px;
+    }
+    .main-container {
+        gap: 100px;
+    }
+    .hero-container {
+        margin: 65px 0px;
+    }
+    .hero-content {
+        max-width: 480px;
+    }
+    .hero-btn, .cta-btn, .team-btn {
+        min-width: 0;
+        width: 245px;
+    }
+    .hero-visual img {
+        max-height: 480px;
+    }
+    #services, #cases, #process, #team, #contact {
+        gap: 60px;
+    }
+    .cards-container {
+        min-width: 100%;
+        width: 1200px;
+        gap: 30px;
+    }
+    .card {
+        min-width: 500px;
+        min-height: 290px;
+        padding: 40px;
+    }
+    .card-grey, .card-green, .card-black {
+        .card-content a::before {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .services-cta {
+        min-width: 100%;
+        width: 1200px;
+        padding: 50px;
+    }
+    
+    .cases-container {
+        min-width: 100%;
+        width: 1200px;
+        padding: 60px 50px;
+    }
+    .case a::after {
+        width: 20px;
+        height: 20px;
+    }
+    .process-card-green, .process-card-grey {
+        min-width: 100%;
+        width: 1200px;
+        padding: 50px 30px;
+    }
+    .process-card-green img, .process-card-grey img {
+        width: 50px;
+        height: 50px;
+    }
+    .process-card-headings h3::before {
+        width: 58px;
+        height: 50px;
+    }
+    .team-card {
+        min-height: 330px;
+        padding: 35px 30px;
+    }
+    .contact-container {
+        min-width: 1140px;
+        padding: 60px 0px 60px 90px;
+    }
+    footer {
+        margin-top: 100px;
+    }
+}
+@media (max-width: 1024px) {
+    :root {
+        --h1-font-size: 44px;
+        --h2-font-size: 32px;
+        --h3-font-size: 24px;
+        --h4-font-size: 18px;
+        --p-font-size: 16px;
+    }
+    body {
+        margin: 30px 30px 0px;
+    }
+    .navbar-list a {
+        font-size: 16px;
+    }
+    .header-btn {
+        min-width: 190px;
+    }
+    .main-container {
+        gap: 80px;
+    }
+    .hero-container {
+        margin: 60px 0px;
+    }
+    .hero-content {
+        max-width: 400px;
+    }
+    .hero-btn, .cta-btn, .team-btn {
+        min-width: 0px;
+        width: 225px;
+    }
+    .hero-visual img {
+        max-height: 440px;
+    }
+    #services, #cases, #process, #team, #contact {
+        gap: 50px;
+    }
+    .cards-container {
+        min-width: 100%;
+        width: 964px;
+        gap: 10px;
+    }
+    .card {
+        min-width: 400px;
+        min-height: 250px;
+        padding: 25px;
+    }
+    .card img {
+        width: 220px;
+        height: 170px;
+        align-self: center;
+    }
+    .services-cta {
+        min-width: 100%;
+        width: 964px;
+        padding: 40px;
+    }
+    .cases-container {
+        min-width: 100%;
+        width: 964px;
+        padding: 50px 40px;
+    }
+    .process-container {
+        & > div:nth-child(2) {
+            .process-card-headings h3::before {
+                content: url(images/number_02_max_width_1024px.png);
+            }
+        }
+        & > div:nth-child(3) {
+            .process-card-headings h3::before {
+                content: url(images/number_03_max_width_1024px.png);
+            }
+        }
+        & > div:nth-child(4) {
+            .process-card-headings h3::before {
+                content: url(images/number_04_max_width_1024px.png);
+            }
+        }
+        & > div:nth-child(5) {
+            .process-card-headings h3::before {
+                content: url(images/number_05_max_width_1024px.png);
+            }
+        }
+        & > div:nth-child(6) {
+            .process-card-headings h3::before {
+                content: url(images/number_06_max_width_1024px.png);
+            }
+        }
+    }
+    .process-card-green, .process-card-grey {
+        min-width: 100%;
+        width: 964px;
+        padding: 40px 20px;
+    }
+    .process-card-green img, .process-card-grey img {
+        width: 40px;
+        height: 40px;
+    }
+    .process-card-headings h3 {
+        gap: 15px;
+    }
+    .process-card-headings h3::before {
+        content: url(images/number_01_max_width_1024px.png);
+        width: 48px;
+        height: 40px;
+    }
+    .team-container {
+        gap: 10px;
+    }
+    .team-card {
+        padding: 30px 25px;
+    }
+    .contact-container {
+        min-width: 100%;
+        width: 964px;
+        padding: 40px 0px 40px 40px;
+        background-size: 350px;
+    }
+    footer {
+        margin-top: 80px;
+        padding: 45px 50px 40px 50px;
+        gap: 40px;
+    }
+    .footer-subscribe-news {
+        padding: 40px 30px;
+    }
+    .footer-subscribe-news form {
+        display: flex;
+        align-items: center;
+    }
+    .footer-btn {
+        height: 67px;
+        min-width: 200px;
+    }
+}
+@media (max-width: 768px) {
+    :root {
+        --h1-font-size: 38px;
+        --h2-font-size: 28px;
+        --h3-font-size: 22px;
+        --h4-font-size: 17px;
+        --p-font-size: 16px;
+    }
+    body {
+        margin: 20px 20px 0px;
+    }
+    .navbar-list {
+        display: none;
+    }
+    .header-btn {
+        min-width: 170px;
+    }
+    .main-container {
+        gap: 60px;
+    }
+    .hero-container {
+        margin: 40px 0px;
+    }
+    .hero-content {
+        gap: 20px;
+    }
+    .hero-btn, .cta-btn, .team-btn {
+        min-width: 0;
+        width: 200px;
+    }
+    .hero-visual img {
+        max-width: 350px;
+    }
+    .logo-carousel img {
+        width: 100px;
+        height: 40px;
+    }
+    #services, #cases, #process, #team, #contact {
+        gap: 40px;
+    }
+    .section-header {
+        gap: 20px;
+    }
+    .cards-container {
+        grid-template-columns: 1fr;
+        min-width: 100%;
+        width: 728px;
+        gap: 20px;
+    }
+    .card {
+        padding: 40px;
+    }
+    .card img {
+        width: fit-content;
+        height: fit-content;
+    }
+    .services-cta {
+        min-width: 100%;
+        width: 728px;
+    }
+    .services-cta img{
+        width: 400px;
+        height: auto;
+    }
+    .cases-container {
+        min-width: 100%;
+        width: 728px;
+        height: auto;
+        gap: 40px;
+        flex-direction: column;
+    }
+    .case {
+        max-width: 100%;
+    }
+    .vertical-line {
+        border: 1px solid var(--white-color);
+    }
+    .process-card-green, .process-card-grey {
+        min-width: 100%;
+        width: 728px;
+        gap: 20px;
+    }
+    .team-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+        width: 728px;
+        padding: 0px 0px;
+    }
+    footer {
+        margin-top: 60px;
+    }
+    .footer-contact-and-news {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-subscribe-news {
+        justify-content: center;
+    }
+}
+@media (max-width: 480px) {
+    :root {
+        --h1-font-size: 32px;
+        --h2-font-size: 24px;
+        --h3-font-size: 20px;
+        --h4-font-size: 16px;
+        --p-font-size: 15px;
+    }
+    body {
+        margin: 15px 15px 0px;
+    }
+    .header-btn {
+        min-height: 60px;
+        min-width: 160px;
+    }
+    .main-container {
+        gap: 50px;
+    }
+    .hero-container {
+        margin: 30px 0px;
+    }
+    .hero-btn, .cta-btn, .team-btn {
+        min-width: 0;
+        width: 175px;
+    }
+    .hero-visual {
+        display: none;
+    }
+    .logo-carousel {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        place-items: center;
+    }
+    #services, #cases, #process, #team, #contact {
+        gap: 30px;
+    }
+    .card {
+        padding: 30px;
+    }
+    .card img {
+        width: 180px;
+        height: 135px;
+    }
+    .services-cta {
+        min-width: 100%;
+        width: 450px;
+    }
+    .services-cta img {
+        display: none;
+    }
+    .cases-container {
+        min-width: 100%;
+        width: 450px;
+        gap: 30px;
+    }
+    .process-card-green, .process-card-grey {
+        min-width: 100%;
+        width: 450px;
+    }
+    .contact-container {
+        min-width: 100%;
+        width: 450px;
+    }
+    .contact-form-container {
+        min-width: none;
+        width: 350px;
+    }
+    .input-container textarea {
+        min-width: 350px;
+    }
+    footer {
+        margin-top: 50px;
+    }
+    .footer-subscribe-news {
+        width: 350px;
+        height: 250px;
+    }
+    .footer-subscribe-news form {
+        flex-direction: column;
+    }
+}
+@media (max-width: 375px) {
+    :root {
+        --h1-font-size: 28px;
+        --h2-font-size: 22px;
+        --h3-font-size: 18px;
+        --h4-font-size: 16px;
+        --p-font-size: 15px;
     }
 }
