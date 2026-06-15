@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="newstyle.css">
     <title>Positivus</title>
 </head>
 <body>
@@ -18,14 +18,20 @@
                 <img src="images/positivus_header_icon.svg" alt="Positivus">
             </a>
         </div>
+        <input id="burger-toggle" type="checkbox">
+        <label class="burger-button" for="burger-toggle" aria-label="Open menu">
+            <span></span>
+        </label>
+        <label class="nav-backdrop" for="burger-toggle" aria-hidden="true"></label>
         <div class="header-navigation">
             <nav class="navbar" aria-label="Main navigation">
                 <ul class="navbar-list">
                     <li><a href="#">About us</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#cases">Use Cases</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="#cases">Cases</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <button class="btn header-btn" type="button">Request a quote</button>
@@ -39,9 +45,7 @@
                     <p>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
                     <button class="btn hero-btn" type="button">Book a consultation</button>
                 </div>
-                <div class="hero-visual">
-                    <img src="images/digital_marketing_process_illustration_bg.png" alt="Digital marketing process illustration">
-                </div>
+                <div class="hero-visual"></div>
             </div>
             <div class="logo-carousel">
                 <img src="images/amazon_logo.png" alt="Amazon">
@@ -135,7 +139,7 @@
                             </div>
                             <a href="#">Learn More</a>
                         </div>
-                        <img src="images/analytics_and_tracking_bg.png" alt="Analytics and Tracking illustration">
+                        <img src="images/analytics_and_tracking_bg.png" alt="Analytics and Tracking illustratio">
                     </div>
                 </div>
             </div>
@@ -160,7 +164,7 @@
                 </div>
                 <div class="vertical-line"></div>
                 <div class="case">
-                    <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.</p>
+                    <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for the keywords and a 200% increase in organic traffic.</p>
                     <a href="#">Learn More</a>
                 </div>
                 <div class="vertical-line"></div>
@@ -187,31 +191,31 @@
                 <div class="process-card-grey">
                     <div class="process-card-headings">
                         <h3>Research and Strategy Development</h3>
-                        <img src="images/plus_icon.png" alt="Open Card">
+                        <img src="images/plus_icon.png" alt="Open card">
                     </div>
                 </div>
                 <div class="process-card-grey">
                     <div class="process-card-headings">
                         <h3>Implementation</h3>
-                        <img src="images/plus_icon.png" alt="Open Card">
+                        <img src="images/plus_icon.png" alt="Open card">
                     </div>
                 </div>
                 <div class="process-card-grey">
                     <div class="process-card-headings">
                         <h3>Monitoring and Optimization</h3>
-                        <img src="images/plus_icon.png" alt="Open Card">
+                        <img src="images/plus_icon.png" alt="Open card">
                     </div>
                 </div>
                 <div class="process-card-grey">
                     <div class="process-card-headings">
                         <h3>Reporting and Communication</h3>
-                        <img src="images/plus_icon.png" alt="Open Card">
+                        <img src="images/plus_icon.png" alt="Open card">
                     </div>
                 </div>
                 <div class="process-card-grey">
                     <div class="process-card-headings">
                         <h3>Continual Improvement</h3>
-                        <img src="images/plus_icon.png" alt="Open Card">
+                        <img src="images/plus_icon.png" alt="Open card">
                     </div>
                 </div>
             </div>
@@ -229,7 +233,7 @@
                             <p>John Smith</p>
                             <p>CEO and Founder</p>
                         </div>
-                        <img src="images/linkedin_team_icon.png" alt="Linkedin Icon Profile" class="team-card-icon">
+                        <img class="team-card-icon" src="images/linkedin_team_icon.png" alt="Linkedin Icon Profile">
                     </div>
                     <hr>
                     <p>10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
@@ -241,7 +245,7 @@
                             <p>Jane Doe</p>
                             <p>Director of Operations</p>
                         </div>
-                        <img src="images/linkedin_team_icon.png" alt="Linkedin Icon Profile" class="team-card-icon">
+                        <img class="team-card-icon" src="images/linkedin_team_icon.png" alt="Linkedin Icon Profile">
                     </div>
                     <hr>
                     <p>7+ years of experience in project management and team leadership. Strong organizational and communication skills</p>
@@ -294,8 +298,8 @@
                     <hr>
                     <p>2+ years of experience in writing and editing. <br> Skilled in creating compelling, SEO-optimized content for various industries</p>
                 </div>
-                <button class="btn team-btn" type="button">See all team</button>
             </div>
+            <button class="btn team-btn" type="button">See all team</button>
         </section>
         <section id="contact">
             <div class="section-header">
@@ -354,9 +358,9 @@
                         <ul class="navbar-list footer-navbar">
                             <li><a href="#">About us</a></li>
                             <li><a href="#services">Services</a></li>
-                            <li><a href="#cases">Use Cases</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="#cases">Cases</a></li>
+                            <li><a href="#process">Process</a></li>
+                            <li><a href="#team">Team</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -399,5 +403,21 @@
             <a href="#">Privacy Policy</a>
         </div>
     </footer>
+    <script>
+        (function () {
+            const burgerToggle = document.getElementById('burger-toggle');
+            const headerNavigation = document.querySelector('.header-navigation');
+
+            if (!burgerToggle || !headerNavigation) return;
+
+            function closeMenu() {
+                burgerToggle.checked = false;
+            }
+
+            headerNavigation.querySelectorAll('a, .header-btn').forEach((element) => {
+                element.addEventListener('click', closeMenu);
+            });
+        })();
+    </script>
 </body>
 </html>
