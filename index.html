@@ -404,7 +404,6 @@
         </div>
     </footer>
     <script>
-        (function () {
             const burgerToggle = document.getElementById('burger-toggle');
             const headerNavigation = document.querySelector('.header-navigation');
 
@@ -414,10 +413,9 @@
                 burgerToggle.checked = false;
             }
 
-            headerNavigation.querySelectorAll('a, .header-btn').forEach((element) => {
-                element.addEventListener('click', closeMenu);
-            });
-        })();
+            headerNavigation.querySelectorAll('a, .header-btn').forEach((elem) => {
+                elem.addEventListener('click', closeMenu);
+            })
     </script>
 </body>
 </html>

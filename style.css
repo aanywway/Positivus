@@ -3,14 +3,14 @@
     --secondary-color: #B9FF66;
     --background-color: #F3F3F3;
     --white-color: #FFF;
-    --h1-font-size: clamp(2rem, 4vw + 1rem, 3.75rem);
-    --h2-font-size: clamp(1.5rem, 2vw + 0.75rem, 2.5rem);
-    --h3-font-size: clamp(1.25rem, 1.5vw + 0.75rem, 1.875rem);
-    --h4-font-size: clamp(1rem, 0.5vw + 0.875rem, 1.25rem);
-    --p-font-size: clamp(0.9375rem, 0.25vw + 0.875rem, 1.125rem);
-    --page-padding: clamp(1.25rem, 4vw, 5rem);
-    --section-gap: clamp(4rem, 8vw, 8.75rem);
-    --block-gap: clamp(2.5rem, 5vw, 5rem);
+    --h1-font-size: clamp(32px, 4vw + 16px, 60px);
+    --h2-font-size: clamp(24px, 2vw + 12px, 40px);
+    --h3-font-size: clamp(20px, 1.5vw + 12px, 30px);
+    --h4-font-size: clamp(16px, 0.5vw + 14px, 20px);
+    --p-font-size: clamp(15px, 0.25vw + 14px, 18px);
+    --page-padding: clamp(20px, 4vw, 80px);
+    --section-gap: clamp(64px, 8vw, 140px);
+    --block-gap: clamp(40px, 5vw, 80px);
 }
 * {
     box-sizing: border-box;
@@ -22,8 +22,7 @@ html {
 }
 body {
     font-family: "Space Grotesk", sans-serif;
-    margin: 0;
-    padding: clamp(2.5rem, 4vw, 3.75rem) var(--page-padding) 0;
+    padding: clamp(40px, 4vw, 60px) var(--page-padding) 0;
     overflow-x: hidden;
 }
 img {
@@ -41,7 +40,7 @@ header {
 header .header-navigation {
     display: flex;
     align-items: center;
-    gap: clamp(1rem, 2vw, 2.5rem);
+    gap: clamp(16px, 2vw, 40px);
     min-width: 0;
 }
 .burger-button,
@@ -53,7 +52,7 @@ header .header-navigation {
 }
 header .navbar-list {
     display: flex;
-    gap: clamp(0.75rem, 1.5vw, 2.5rem);
+    gap: clamp(12px, 1.5vw, 40px);
     min-width: 0;
     flex-shrink: 1;
 
@@ -66,8 +65,7 @@ header .navbar-list {
         display: inline-block;
         text-decoration: none;
         color: var(--main-color);
-        font-size: clamp(0.875rem, 0.4vw + 0.75rem, 1.25rem);
-        line-height: 1.35;
+        font-size: clamp(14px, 0.4vw + 12px, 20px);
         text-underline-offset: 5px;
 
         &:hover {
@@ -80,13 +78,16 @@ header .navbar-list {
 .footer-navigation .navbar-list {
     display: flex;
     flex-wrap: wrap;
-    gap: clamp(0.75rem, 2vw, 2.5rem);
+    gap: clamp(12px, 2vw, 40px);
 
     & li {
         list-style-type: none;
     }
 }
 .btn {
+    border: 1px solid var(--main-color);
+    -webkit-appearance: none;
+    appearance: none;
     border-radius: 14px;
     font-size: var(--h4-font-size);
     min-height: 68px;
@@ -112,8 +113,8 @@ header .navbar-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: clamp(1.5rem, 4vw, 3rem);
-    margin: clamp(2.5rem, 5vw, 4.375rem) 0;
+    gap: clamp(24px, 4vw, 48px);
+    margin: clamp(40px, 5vw, 70px) 0;
 }
 .hero-visual {
     flex: 1 1 320px;
@@ -131,7 +132,7 @@ header .navbar-list {
     max-width: 530px;
     display: flex;
     flex-direction: column;
-    gap: clamp(1.25rem, 2.5vw, 2.1875rem);
+    gap: clamp(20px, 2.5vw, 35px);
 
     & h1 {
         font-size: var(--h1-font-size);
@@ -151,7 +152,7 @@ header .navbar-list {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: clamp(1rem, 3vw, 2rem);
+    gap: clamp(16px, 3vw, 32px);
 
     & img {
         flex: 0 1 auto;
@@ -196,7 +197,7 @@ header .navbar-list {
 .cards-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: clamp(1.25rem, 3vw, 2.5rem);
+    gap: clamp(20px, 3vw, 40px);
     width: 100%;
 }
 .card {
@@ -207,7 +208,7 @@ header .navbar-list {
     border-radius: 45px;
     border: 1px solid black;
     border-bottom-width: 5px;
-    padding: clamp(1.5rem, 3vw, 3.125rem);
+    padding: clamp(24px, 3vw, 50px);
     gap: 20px;
 }
 
@@ -297,8 +298,8 @@ header .navbar-list {
     width: 100%;
     border-radius: 45px;
     background-color: var(--background-color);
-    padding: clamp(2rem, 4vw, 3.75rem);
-    gap: clamp(1.5rem, 3vw, 2.5rem);
+    padding: clamp(32px, 4vw, 60px);
+    gap: clamp(24px, 3vw, 40px);
 }
 
 .services-cta > img {
@@ -327,8 +328,8 @@ header .navbar-list {
     width: 100%;
     background-color: var(--main-color);
     border-radius: 45px;
-    padding: clamp(2rem, 4vw, 4.375rem) clamp(1.5rem, 4vw, 3.75rem);
-    gap: clamp(1.5rem, 4vw, 4rem);
+    padding: clamp(32px, 4vw, 70px) clamp(24px, 4vw, 60px);
+    gap: clamp(24px, 4vw, 64px);
 }
 .case {
     display: flex;
@@ -449,7 +450,7 @@ header .navbar-list {
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: clamp(1.25rem, 3vw, 2.5rem);
+    gap: clamp(20px, 3vw, 40px);
     width: 100%;
 }
 .team-card {
@@ -460,7 +461,7 @@ header .navbar-list {
     border: 1px solid black;
     border-bottom-width: 5px;
     border-radius: 45px;
-    padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 2.5vw, 2.1875rem);
+    padding: clamp(24px, 3vw, 40px) clamp(20px, 2.5vw, 35px);
     overflow: hidden;
 
     & p {
@@ -516,7 +517,7 @@ header .navbar-list {
     width: 100%;
     min-height: 770px;
     border-radius: 45px;
-    padding: clamp(2rem, 4vw, 4.375rem) clamp(1.5rem, 4vw, 6.25rem);
+    padding: clamp(32px, 4vw, 70px) clamp(24px, 4vw, 100px);
 }
 .contact-form-container {
     display: flex;
@@ -606,7 +607,7 @@ footer {
     background-color: var(--main-color);
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
-    padding: clamp(2rem, 4vw, 3.125rem) max(var(--page-padding), 3.75rem);
+    padding: clamp(32px, 4vw, 50px) max(var(--page-padding), 60px);
 }
 .footer-nav-and-contact {
     display: flex;
@@ -695,10 +696,6 @@ footer {
         }
     }
 }
-/* ===================================================
-   Responsive
-   =================================================== */
-
 @media (max-width: 1200px) {
     .header-btn {
         min-width: 160px;
@@ -793,7 +790,7 @@ footer {
         right: 0;
         width: min(85vw, 320px);
         height: 100dvh;
-        padding: clamp(5rem, 12vw, 6rem) 2rem 2rem;
+        padding: clamp(80px, 12vw, 96px) 2rem 2rem;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -901,7 +898,7 @@ footer {
 
     .process-card-green,
     .process-card-grey {
-        padding: clamp(1.25rem, 3vw, 2.5rem) clamp(1.5rem, 3vw, 2.5rem);
+        padding: clamp(20px, 3vw, 40px) clamp(24px, 3vw, 40px);
     }
 
     .process-card-green {
@@ -914,7 +911,7 @@ footer {
 
     .contact-container {
         background-position: right center;
-        padding-inline: clamp(1.5rem, 4vw, 2.5rem);
+        padding-inline: clamp(24px, 4vw, 40px);
     }
 }
 
@@ -962,7 +959,7 @@ footer {
     }
 
     .team-card {
-        padding: clamp(1.25rem, 4vw, 2rem);
+        padding: clamp(20px, 4vw, 32px);
     }
 
     .team-person {
@@ -1003,7 +1000,7 @@ footer {
 
     .footer-subscribe-news {
         max-width: 100%;
-        padding: clamp(1.5rem, 4vw, 2.5rem);
+        padding: clamp(24px, 4vw, 40px);
     }
 
     .footer-subscribe-news form {
@@ -1029,7 +1026,7 @@ footer {
     }
 
     .process-card-headings h3 {
-        font-size: clamp(1rem, 3vw, 1.25rem) !important;
+        font-size: clamp(16px, 3vw, 20px) !important;
         gap: 0.75rem;
     }
 
