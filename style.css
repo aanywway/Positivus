@@ -89,6 +89,7 @@ header .navbar-list {
     -webkit-appearance: none;
     appearance: none;
     border-radius: 14px;
+    color: var(--white-color);
     font-size: var(--h4-font-size);
     min-height: 68px;
     cursor: pointer;
