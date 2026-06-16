@@ -86,11 +86,7 @@ header .navbar-list {
 }
 .btn {
     border: 1px solid var(--main-color);
-    -webkit-appearance: none;
-    appearance: none;
     border-radius: 14px;
-    color: var(--main-color);
-    -webkit-text-fill-color: var(--main-color);
     font-size: var(--h4-font-size);
     min-height: 68px;
     cursor: pointer;
